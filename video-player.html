@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player - CaseOh - Strawberry Cheesecake</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-player-container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #main-video h3, #main-video p {
+            margin: 10px 0;
+        }
+
+        #suggested-videos {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        #suggested-videos .video {
+            margin-bottom: 20px;
+        }
+
+        #suggested-videos .video img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SHNUG</h1>
+    </header>
+    <div class="video-player-container">
+        <main id="main-video">
+            <div class="video-container">
+                <video controls>
+                    <source src="CaseOh, LxvRich, Daoism - Strawberry Cheesecake (Instrumental).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3>CaseOh - Strawberry Cheesecake (Original Song)</h3>
+            <p>Views: 301</p>
+        </main>
+        <aside id="suggested-videos">
+            <!-- Suggested videos go here -->
+            <div class="video">
+                <h3>Another Video Title</h3>
+                <p>Views: 123</p>
+            </div>
+            <!-- Repeat for more suggested videos -->
+        </aside>
+    </div>
+    <footer>
+        <p>© 2024 Team Shnug</p>
+    </footer>
+</body>
+</html>
